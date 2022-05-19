@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height: 60px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 15px 22px;
+   text-decoration: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(231, 175, 231);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace
+}
+#services{
+    margin: 40px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    height: 150px;
+    border-radius: 23px;
+    padding: 34px;
+    margin: 3px 6px;
+    background: rgb(238, 202, 207);
+
+}
+footer{
+    background: rgb(118, 118, 224);
+    color: white;
+    padding: 10px 20px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace
+}
+.h-secondary{
+    font-size: 1.7rem;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace
+}
+#services .box p{
+    font-family: 'Courier New', Courier, monospace
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid brown;
+    background-color: bisque;
+    margin: 17px 17px ;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
